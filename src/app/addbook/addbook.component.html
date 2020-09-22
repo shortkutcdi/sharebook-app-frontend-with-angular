@@ -1,0 +1,21 @@
+<div class="container-add-book">
+  <h1>Ajouter un livre</h1>
+
+  <form (ngSubmit)="save()">
+    <div>
+      <label for="name">Nom du livre</label>
+      <input type="text" name="name" [(ngModel)]="book.name" class="form-control">
+    </div>
+    <div>
+      <label for="category">Catégorie du livre</label>
+      <input type="text" name="category" [(ngModel)]="book.category" class="form-control">
+    </div>
+    <div class="container-submit">
+      <input type="submit" value="Valider" class="btn btn-primary">
+    </div>
+  </form>
+
+  <div>
+    <a routerLink="">Retour</a>
+  </div>
+</div>
